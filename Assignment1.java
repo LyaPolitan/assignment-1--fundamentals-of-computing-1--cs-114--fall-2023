@@ -9,8 +9,8 @@ public class Assignment1 {
     //declaring all my variables
     double Celsius;
     int Fahrenheit;
-    int Base = 32;
-    double Conversion =5.0/9.0;
+    final int Base = 32;
+    final double Conversion =5.0/9.0;
 
     //variables for string
     String Word;
