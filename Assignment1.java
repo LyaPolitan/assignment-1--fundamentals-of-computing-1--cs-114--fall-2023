@@ -11,7 +11,11 @@ public class Assignment1 {
     int Base = 32;
     double Conversion =5.0/9.0;
 
-    //allowing keybaord input
+    //variables for string
+    String Word;
+    String newWord = ("");
+
+    //allowing keyboard input
     Scanner Scan = new Scanner(System.in);
 
     // My initials
@@ -24,15 +28,22 @@ public class Assignment1 {
     System.out.println("LL LLL LLL     PPP");
     System.out.println("                              ");
 
+    //asking the user for a string
+    System.out.println("please enter a 5-character string");
+    Word = Scan.nextLine();
+
+    for(int i = Word.length() - 1; i >=0; i--)
+    {
+    newWord = newWord + Word.charAt(i);
+    }
+    System.out.println(newWord);
+
     //Asking the user for a temperature
     System.out.println("please enter a number in Fahrenheit");
     Fahrenheit = Scan.nextInt();
 
     //equation that allows me to convert fahrenheit to celsius
     Celsius = Conversion * (Fahrenheit - Base);
-
-
-    System.out.println("Your temperature in celsius is "+ Celsius);
 
 
     Scan.close();
