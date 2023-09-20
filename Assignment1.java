@@ -20,7 +20,7 @@ public class Assignment1 {
     Random generator = new Random();
     int Number;
 
-    Number = generator.nextInt(16385) - 16;
+    Number = generator.nextInt(16385) - 32;
 
     //allowing keyboard input
     Scanner Scan = new Scanner(System.in);
