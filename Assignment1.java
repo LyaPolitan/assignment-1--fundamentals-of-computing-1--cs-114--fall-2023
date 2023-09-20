@@ -1,5 +1,6 @@
 // Import libraries here
 // Lyam Perez
+import java.util.Random;
 import java.util.Scanner;
 
 public class Assignment1 {
@@ -16,13 +17,18 @@ public class Assignment1 {
     String newWord = ("");
 
     //varibles for random number generation
-    //Random Generator = new Random();
-   //int Number
+    Random generator = new Random();
+    int Number;
+
+    Number = generator.nextInt(16385) - 16;
 
     //allowing keyboard input
     Scanner Scan = new Scanner(System.in);
 
     // My initials
+    System.out.println("                              ");
+    System.out.println("                              ");
+    System.out.println("                              ");
     System.out.println("LLL            PP PPP PPP PP");
     System.out.println("LLL            PPP          PP");
     System.out.println("LLL            PPP          PP");
@@ -30,6 +36,7 @@ public class Assignment1 {
     System.out.println("LLL            PPP");
     System.out.println("LL LLL LLL     PPP");
     System.out.println("LL LLL LLL     PPP");
+    System.out.println("                              ");
     System.out.println("                              ");
 
     //asking the user for a string
@@ -51,9 +58,15 @@ public class Assignment1 {
     //equation that allows me to convert fahrenheit to celsius
     Celsius = Conversion * (Fahrenheit - Base);
 
-    //printing the result
-    System.out.println(Celsius+newWord);
+    //standby screen
+    System.out.println("Random number Generated. Continuing...");
 
+    //printing the result
+    System.out.println(Celsius+newWord+Number);
+
+    System.out.println("                              ");
+    System.out.println("                              ");
+    System.out.println("       ~~~~~~~~~~~~~~         ");
     Scan.close();
   }
 }
