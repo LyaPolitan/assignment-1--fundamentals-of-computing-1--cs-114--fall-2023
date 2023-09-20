@@ -15,6 +15,10 @@ public class Assignment1 {
     String Word;
     String newWord = ("");
 
+    //varibles for random number generation
+    //Random Generator = new Random();
+   //int Number
+
     //allowing keyboard input
     Scanner Scan = new Scanner(System.in);
 
@@ -36,7 +40,9 @@ public class Assignment1 {
     {
     newWord = newWord + Word.charAt(i);
     }
-    System.out.println(newWord);
+
+    //removes the first and last letter of the string
+    newWord = newWord.substring(1,newWord.length()-1);
 
     //Asking the user for a temperature
     System.out.println("please enter a number in Fahrenheit");
@@ -45,6 +51,8 @@ public class Assignment1 {
     //equation that allows me to convert fahrenheit to celsius
     Celsius = Conversion * (Fahrenheit - Base);
 
+    //printing the result
+    System.out.println(Celsius+newWord);
 
     Scan.close();
   }
